@@ -44,15 +44,15 @@ function Footer() {
           Presentations
         </h1>
         <div className="dets mt-10">
-          <a className="block text-xl font-light" href="#">
-            Facebook
-          </a>
-          <a className="block text-xl font-light" href="#">
-            Instagram
-          </a>
-          <a className="block text-xl font-light" href="#">
-            Twitter
-          </a>
+          {/* <a className="block text-xl font-light" href="#">
+              Facebook
+            </a>
+            <a className="block text-xl font-light" href="#">
+              Instagram
+            </a>
+            <a className="block text-xl font-light" href="#">
+              Twitter
+            </a> */}
         </div>
       </div>
     </div>
