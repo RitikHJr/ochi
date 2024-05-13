@@ -1,18 +1,33 @@
-import React from "react";
+import { motion } from "framer-motion";
 import { FaArrowUpLong } from "react-icons/fa6";
 
 function LandingPage() {
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="w-full h-screen bg-zinc-900 pt-1"
+    >
       <div className="textstructure mt-52 px-20">
         {["We Create", "Eye Opening", "Presentations"].map((item, index) => {
           return (
             <div key={index} className="masker">
-              <div className="w-fit flex items-end overflow-hidden">
+              <div className="w-fit flex items-end">
                 {index === 1 && (
-                  <div className="w-[9vw] h-[7vw] relative top-[1vw] bg-red-500"></div>
+                  <motion.img
+                    src="/public/Images/landing img.jpeg"
+                    initial={{ width: 0 }}
+                    animate={{ width: "9vw" }}
+                    transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                    className="w-[9vw] rounded-md h-[6.3vw] top-[1.2vw] relative bg-green-500"
+                  ></motion.img>
                 )}
-                <h1 className="flex items-center uppercase text-[9vw] h-full leading-[7vw] tracking-tighter font-['Founders GroteskX-Condensed'] font-bold">
+                <h1
+                  className="pt-[2vw] -mb-[1vw] uppercase text-[9vw] leading-[.75] font-['Founders_ Grotesk_X-Condensed'] 
+                    font-family: Barlow Condensed
+                font-bold"
+                >
                   {item}
                 </h1>
               </div>
@@ -21,7 +36,7 @@ function LandingPage() {
         })}
       </div>
 
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-5 px-20">
+      <div className="border-t-[1px] border-zinc-800 mt-24 flex justify-between items-center py-5 px-20">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
