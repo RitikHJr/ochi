@@ -1,0 +1,11 @@
+/* --- media query ---- */
+
+@media (max-width: 1000px) {
+  .nav-links a {
+    display: none;
+  }
+  .menu-icon-white {
+    color: white;
+    font-size: 30px;
+  }
+}

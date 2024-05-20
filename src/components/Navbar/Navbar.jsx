@@ -1,4 +1,5 @@
-import React from "react";
+import "./Navbar.css";
+import { FiMenu } from "react-icons/fi";
 
 function Navbar() {
   return (
@@ -34,7 +35,7 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
+      <div className="links flex gap-10 nav-links">
         {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
           (item, index) => (
             <a
@@ -48,6 +49,7 @@ function Navbar() {
           )
         )}
       </div>
+      <FiMenu className="menu-icon-white" />
     </div>
   );
 }

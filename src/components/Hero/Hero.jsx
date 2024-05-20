@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { FaArrowUpLong } from "react-icons/fa6";
+import "./Hero.css";
 
-function LandingPage() {
+function Hero() {
   return (
     <div
       data-scroll
@@ -63,4 +64,4 @@ function LandingPage() {
   );
 }
 
-export default LandingPage;
+export default Hero;
